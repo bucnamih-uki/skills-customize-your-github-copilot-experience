@@ -1,19 +1,48 @@
 
-# 🎮 Hangman Game Challenge
+# 📘 Hangman Game Challenge
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+## 🎯 Objective
 
-## � What You'll Build
+Create the classic Hangman word-guessing game where players guess letters to reveal a hidden word before running out of attempts. You'll practice string manipulation, loops, conditionals, and working with lists in Python.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tasks
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 🛠️ Set Up the Game Structure
 
-## ✅ Must Have's
+#### Description
+Start by creating the foundation of your game. You'll set up a word list, initialize game variables, and display the initial game state to the player.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Have a predefined list of at least 5 words to guess from
+- Randomly select one word at the start of each game
+- Initialize variables to track incorrect guesses remaining (suggest 6 attempts)
+- Display the hidden word in underscore format (e.g., `_ _ _ _ _ _`)
+
+### 🛠️ Implement Guess Handling
+
+#### Description
+Build the core gameplay loop that accepts player guesses, validates them, and updates the game state based on correct or incorrect guesses.
+
+#### Requirements
+Completed program should:
+
+- Accept single letter guesses from the player
+- Check if the guessed letter is in the word
+- Update the display to show correctly guessed letters
+- Display list of incorrect guesses made so far
+- Provide feedback when a guess is already made
+
+### 🛠️ Add Win/Lose Logic
+
+#### Description
+Complete the game by adding win and lose conditions with appropriate messages and replay functionality.
+
+#### Requirements
+Completed program should:
+
+- End the game when the player guesses the word (display win message)
+- End the game when incorrect guesses reach zero (display lose message and reveal the word)
+- Show the final word and game result clearly
+- Ask if the player wants to play again
